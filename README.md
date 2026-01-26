@@ -13,10 +13,9 @@ La simulation consiste à compter le nombre d'enregistrements d'un fichier cons�
 
 ## Description du contenu des répertoires principaux de l'application
 
-- root : evalJS.js/evalJS.exe | evalCPP.cpp/evalCPP.exe | evalCOBOL.cbl/evalCOBOL.exe | evalZig.zig/EvalZig.exe
-- data : contient le fichier des transactions immobilières françaises de l'année 2023 issu de 
-         https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/<br>
--   // Champs ci-dessous pour chaque ligne de ce fichier --------------------------------------
+- root : code source des diverses implémentations -> evalJS.js | evalCPP.cpp | evalCOBOL.cbl | evalZig.zig
+- data : doit contenir le fichier des transactions immobilières françaises <br>
+-   // Champs ci-dessous pour chaque ligne de ce fichier :
     // Code service CH
     // Reference document
     // 1 Articles CGI
@@ -75,3 +74,11 @@ Voici les versions téléchargées au 25 janvier 2026 :
 - Cobol : GNUCobol (v3.3)
 - Zig : Zig (v0.15.2)
 
+
+## Fonctionnement de l'application
+
+1/ Vous devez créer un répertoire /data et y stocker le fichier .txt récupérable à l'adresse suivante : https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/. L'année importe peu : les tests ont été réalisés avec les transactions immobilières de l'année 2023.
+
+2/ Vous devez compiler chaque source avec le compilateur fourni. Ex : après avoir téléchargé Clang, vous lancez la commande 'clang -O3 evalCPP.cpp -o evalCPP.exe' pour le code source C++.
+
+3/ Vous pouvez alors lancer chaque exécutable
