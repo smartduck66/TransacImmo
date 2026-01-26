@@ -1,4 +1,4 @@
-# Transactions Immobilières - WIP
+# Transactions Immobilières
 
 > **Simulation de performance entre langages de programmation**<br>
 > Langages concernés : Javascript, C++, Cobol, Zig<br>
