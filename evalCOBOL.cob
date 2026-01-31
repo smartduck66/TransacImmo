@@ -6,7 +6,7 @@
       * Le compilateur GnuCOBOL est libre et gratuit.
       * Téléchargement via https://superbol.eu/resources/windows-aio-32/
       * Compilation : cobc -x evalCOBOL.cob
-      * Mesure 'à la main' : environ 14" constatées
+      * Mesure 'à la main' : environ 17" constatées
       * 
        IDENTIFICATION DIVISION.
        PROGRAM-ID. EVALCOBOL.
@@ -25,6 +25,7 @@
        WORKING-STORAGE SECTION.
 
        77  WS-NB-RECORDS       PIC 9(9) VALUE 0.
+       77  WS-NB-TRANSACTIONS  PIC 9(9) VALUE 0.
        77  WS-TOTAL-VENTES     PIC 9(15) VALUE 0.
        77  WS-EOF              PIC X VALUE 'N'.
 
@@ -33,6 +34,7 @@
                                PIC X(100).
 
        77  WS-PRIX-INT         PIC 9(15).
+       77  WS-TR-CUR-INT       PIC 9(15).
 
        PROCEDURE DIVISION.
 
@@ -51,10 +53,13 @@
 
            CLOSE F-VENTES
 
-           DISPLAY "Nombre d'enregistrements : "
+           DISPLAY "Nb d'enregistrements du fichier : "
                    WS-NB-RECORDS
+       
+           DISPLAY "Nb de transactions immobilieres : "
+                   WS-NB-TRANSACTIONS
 
-           DISPLAY "Montant total des ventes : "
+           DISPLAY "Montant total des ventes        : "
                    FUNCTION INTEGER(WS-TOTAL-VENTES / 1000000000)
                    " milliards d'euros"
 
@@ -84,5 +89,12 @@
                
                COMPUTE WS-PRIX-INT = 
                    FUNCTION NUMVAL(WS-FIELD (11))
-               ADD WS-PRIX-INT TO WS-TOTAL-VENTES
+
+               IF WS-PRIX-INT NOT = 0 AND 
+                  WS-PRIX-INT NOT = WS-TR-CUR-INT
+                   ADD WS-PRIX-INT TO WS-TOTAL-VENTES
+                   MOVE FUNCTION NUMVAL(WS-FIELD (11)) TO WS-TR-CUR-INT
+                   ADD 1 TO WS-NB-TRANSACTIONS
+               END-IF
+        
            END-IF.

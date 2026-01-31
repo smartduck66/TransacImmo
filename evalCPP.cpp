@@ -24,6 +24,8 @@ int main() {
     
     int nbRecords = 0;
     long long totalVentes = 0;
+    int MontantTransactionEnCours = 0;
+    int NbTransactions = 0;
     std::string line;
     line.reserve(1000);  // Pré-allouer pour éviter les réallocations
     
@@ -60,7 +62,14 @@ int main() {
             
             if (endPos > pos) {
                 try {
-                    totalVentes += std::stoll(line.substr(pos, endPos - pos));
+                    const int prix=std::stoll(line.substr(pos, endPos - pos));
+                    // On vérifie si le prix est différent du montant de la transaction en cours : si c'est le cas,
+                    // on a changé de transaction et on peut donc ajouter le montant de la transaction précédente au total
+                    if (prix != MontantTransactionEnCours) {
+                        totalVentes += MontantTransactionEnCours;
+                        MontantTransactionEnCours = prix;
+                        ++NbTransactions;
+          }
                 } catch (...) {
                     // Ignorer les valeurs invalides
                 }
@@ -73,9 +82,10 @@ int main() {
     auto endTime = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
     
-    std::cout << "Nombre d'enregistrements : " << nbRecords << std::endl;
-    std::cout << "Montant total des ventes : " << (totalVentes / 1000000000) << " milliards d'euros" << std::endl;
-    std::cout << "Evaluation en C++        : " << duration.count() << " millisecondes" << std::endl;
+    std::cout << "Nb d'enregistrements du fichier : " << nbRecords << std::endl;
+    std::cout << "Nb de transactions immobilieres : " << NbTransactions << std::endl;
+    std::cout << "Montant total des ventes        : " << (totalVentes / 1000000000) << " milliards d'euros" << std::endl;
+    std::cout << "Temps d'execution en C++        : " << duration.count() << " millisecondes" << std::endl;
     
     return 0;
 }

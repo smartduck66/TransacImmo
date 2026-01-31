@@ -21,6 +21,8 @@ pub fn main() !void {
 
     var nb_records: i64 = 0;
     var total_ventes: i64 = 0;
+    var MontantTransactionEnCours: i64 = 0;
+    var NbTransactions: i64 = 0;
 
     const content = try file.readToEndAlloc(allocator, 1024 * 1024 * 1024);
     defer allocator.free(content);
@@ -57,7 +59,14 @@ pub fn main() !void {
             if (end_pos > pos) {
                 const price_str = line[pos..end_pos];
                 if (std.fmt.parseInt(i64, price_str, 10)) |price| {
-                    total_ventes += price;
+                    // On vérifie si le prix est différent du montant de la transaction en cours : si c'est le cas,
+                    // on a changé de transaction et on peut donc ajouter le montant de la transaction précédente au total
+                    if (price != MontantTransactionEnCours) {
+                        total_ventes += MontantTransactionEnCours;
+                        MontantTransactionEnCours = price;
+                        NbTransactions += 1;
+                    }
+
                 } else |_| {
                     // Ignorer les valeurs invalides
                 }
@@ -70,7 +79,8 @@ pub fn main() !void {
 
     const billions = @as(f64, @floatFromInt(total_ventes)) / 1_000_000_000.0;
 
-    std.debug.print("Nombre d'enregistrements : {}\n", .{nb_records});
-    std.debug.print("Montant total des ventes : {d:.1} milliards d'euros\n", .{billions});
-    std.debug.print("Evaluation en Zig        : {} millisecondes\n", .{duration_ms});
+    std.debug.print("Nb d'enregistrements du fichier : {}\n", .{nb_records});
+    std.debug.print("Nb de transactions immobilieres : {}\n", .{NbTransactions});
+    std.debug.print("Montant total des ventes        : {d:.0} milliards d'euros\n", .{billions});
+    std.debug.print("Temps d'execution en Zig        : {} millisecondes\n", .{duration_ms});
 }
