@@ -77,7 +77,7 @@ Voici les versions téléchargées au 25 janvier 2026 :
 
 ## Fonctionnement de l'application
 
-1/ Vous devez créer un répertoire /data et y stocker le fichier .txt récupérable à l'adresse suivante : https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/. L'année importe peu : les tests ont été réalisés avec les transactions immobilières de l'année 2023.
+1/ Vous devez créer un répertoire /data et y stocker le fichier valeursfoncieres.txt récupérable à l'adresse suivante : https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/. L'année importe peu : les tests ont été réalisés avec les transactions immobilières de l'année 2023.
 
 2/ Vous devez compiler chaque source avec le compilateur fourni. Ex : après avoir téléchargé Clang, vous lancez la commande 'clang -O3 evalCPP.cpp -o evalCPP.exe' pour le code source C++.
 
