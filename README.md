@@ -14,53 +14,59 @@ La simulation consiste à compter le nombre d'enregistrements d'un fichier cons�
 ## Description du contenu des répertoires principaux de l'application
 
 - root : code source des diverses implémentations -> evalJS.js | evalCPP.cpp | evalCOBOL.cbl | evalZig.zig
-- data : doit contenir le fichier des transactions immobilières françaises <br>
--   // Champs ci-dessous pour chaque ligne de ce fichier :
-    // Code service CH
-    // Reference document
-    // 1 Articles CGI
-    // 2 Articles CGI
-    // 3 Articles CGI
-    // 4 Articles CGI
-    // 5 Articles CGI
-    // No disposition
-    // Date mutation
-    // Nature mutation
-    // Valeur fonciere
-    // No voie
-    // B
-    // T
-    // Q
-    // Type de voie
-    // Code voie
-    // Voie
-    // Code postal
-    // Commune
-    // Code departement
-    // Code commune
-    // Prefixe de section
-    // Section
-    // No plan
-    // No Volume
-    // 1er lot
-    // Surface Carrez du 1er lot
-    // 2eme lot
-    // Surface Carrez du 2eme lot
-    // 3eme lot
-    // Surface Carrez du 3eme lot
-    // 4eme lot
-    // Surface Carrez du 4eme lot
-    // 5eme lot
-    // Surface Carrez du 5eme lot
-    // Nombre de lots
-    // Code type local
-    // Type local
-    // Identifiant local
-    // Surface reelle bati
-    // Nombre pieces principales
-    // Nature culture
-    // Nature culture speciale
-    // Surface terrain
+- data : doit contenir le fichier des transactions immobilières françaises
+  
+
+### Structure des champs du fichier
+
+| Ordre | Nom du champ |
+|------:|--------------|
+| 1 | Code service CH |
+| 2 | Référence document |
+| 3 | Article CGI 1 |
+| 4 | Article CGI 2 |
+| 5 | Article CGI 3 |
+| 6 | Article CGI 4 |
+| 7 | Article CGI 5 |
+| 8 | N° disposition |
+| 9 | Date mutation |
+| 10 | Nature mutation |
+| 11 | Valeur foncière |
+| 12 | N° voie |
+| 13 | B |
+| 14 | T |
+| 15 | Q |
+| 16 | Type de voie |
+| 17 | Code voie |
+| 18 | Voie |
+| 19 | Code postal |
+| 20 | Commune |
+| 21 | Code département |
+| 22 | Code commune |
+| 23 | Préfixe de section |
+| 24 | Section |
+| 25 | N° plan |
+| 26 | N° volume |
+| 27 | 1er lot |
+| 28 | Surface Carrez du 1er lot |
+| 29 | 2e lot |
+| 30 | Surface Carrez du 2e lot |
+| 31 | 3e lot |
+| 32 | Surface Carrez du 3e lot |
+| 33 | 4e lot |
+| 34 | Surface Carrez du 4e lot |
+| 35 | 5e lot |
+| 36 | Surface Carrez du 5e lot |
+| 37 | Nombre de lots |
+| 38 | Code type local |
+| 39 | Type local |
+| 40 | Identifiant local |
+| 41 | Surface réelle bâtie |
+| 42 | Nombre de pièces principales |
+| 43 | Nature culture |
+| 44 | Nature culture spéciale |
+| 45 | Surface terrain |
+
 
 
 ## Compilateurs nécessaires à l'application
