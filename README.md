@@ -1,7 +1,7 @@
 # Transactions Immobilières
 
 > **Simulation de performance entre langages de programmation**<br>
-> Langages concernés : Javascript, C++, Cobol, Zig, Python<br>
+> Langages concernés : Javascript, C++, Cobol, Zig, Python, C#<br>
 > Environnement d'exécution : Windows 11<br>
 > Derniers travaux : 1er février 2026<br>
 
@@ -74,6 +74,7 @@ Voici les versions téléchargées au 1er février 2026 :
 - Cobol : GNUCobol (v3.3)
 - Zig : v0.15.2
 - Python : v3.14.2
+- C# : v14 (.Net10)
 
 
 ## Fonctionnement de l'application
@@ -89,6 +90,7 @@ Voici les versions téléchargées au 1er février 2026 :
 
 - C++, version 'fast':       750 ms
 - Zig :                      785 ms
+- C# :                       800 ms
 - Javascript, via node :   2 400 ms 
 - Javascript, via bun :    2 600 ms 
 - C++, version 'classic' : 2 500 ms 
