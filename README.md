@@ -94,13 +94,14 @@ Voici les versions téléchargées au 1er février 2026 :
 
 ## Évaluations du temps d'exécution moyen sur un PC Windows 11 — 2,8 GHz, Intel Core i9-10900F (10 cœurs), 64 Go de RAM
 
-| Langage / Implémentation        | Temps moyen |
-|---------------------------------|-------------|
-| C++ (version *fast*)            | 750 ms      |
-| Zig                             | 785 ms      |
-| C#                              | 800 ms      |
-| JavaScript (Node.js)            | 2 400 ms    |
-| JavaScript (Bun)                | 2 600 ms    |
-| C++ (version *classic*)         | 2 500 ms    |
-| Python                          | 6 000 ms    |
-| Cobol                           | 17 000 ms   |
+| Langage / Implémentation        | Temps moyen | Taille de l'exécutable (ko) |
+|---------------------------------|-------------|-----------------------------|
+| C++ (version *fast*)            | 750 ms      | 267                         |
+| Zig                             | 785 ms      | 258                         |
+| C#                              | 800 ms      | 1 246                       |
+| JavaScript (Node.js)            | 2 400 ms    | N/A (runtime externe)       |
+| JavaScript (Bun)                | 2 600 ms    | 110 486                     |
+| C++ (version *classic*)         | 2 500 ms    | 281                         |
+| Python                          | 6 000 ms    | N/A (interpréteur requis)   |
+| Cobol                           | 17 000 ms   | 66                         |
+
