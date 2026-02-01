@@ -67,7 +67,7 @@ La simulation consiste à compter le nombre d'enregistrements d'un fichier cons�
 
 Chaque fichier source contient un en-tête précisant la ligne de commande de compilation et le site où charger les compilateurs. 
 
-Voici les versions téléchargées au 25 janvier 2026 :
+Voici les versions téléchargées au 1er février 2026 :
 
 - Javascript : node (v24.11.1) et bun (v1.3.6 - Exécutable JS autonome)
 - C++ : llvm (clang v21.1.8)
