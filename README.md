@@ -73,7 +73,7 @@ Voici les versions téléchargées au 25 janvier 2026 :
 - C++ : llvm (clang v21.1.8)
 - Cobol : GNUCobol (v3.3)
 - Zig : v0.15.2
-- Python : v3.13.9
+- Python : v3.14.2
 
 
 ## Fonctionnement de l'application
