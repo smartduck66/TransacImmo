@@ -83,3 +83,14 @@ Voici les versions téléchargées au 1er février 2026 :
 2/ Vous devez compiler chaque source avec le compilateur fourni. Ex : après avoir téléchargé Clang, vous lancez la commande 'clang -O3 evalCPP.cpp -o evalCPP.exe' pour le code source C++.
 
 3/ Vous pouvez alors lancer chaque exécutable
+
+
+## Evaluations du temps d'exécution moyen sous PC Windows 11, 2,8 Ghz, Intel Core i9-10900F (10 cœurs), 64 Go de RAM 
+
+- C++, version 'fast':       750 ms
+- Zig :                      785 ms
+- Javascript, via node :   2 400 ms 
+- Javascript, via bun :    2 600 ms 
+- C++, version 'classic' : 2 500 ms 
+- Python :                 6 000 ms
+- Cobol :                 17 000 ms

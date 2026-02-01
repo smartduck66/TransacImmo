@@ -2,7 +2,6 @@
 // Version en C++ - OPTIMISÉE
 // Compilation avec LLVM : clang -O3 evalCPP.cpp -o evalCPP.exe
 // https://github.com/llvm/llvm-project/releases
-// Mesure : environ 2,6" constatées
 // ***********************************************************************************************
 
 #include <iostream>

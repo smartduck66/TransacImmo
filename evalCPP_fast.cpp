@@ -2,7 +2,6 @@
 // Version en C++ - ULTRA-RAPIDE avec chargement mémoire du fichier .txt
 // Compilation avec LLVM : clang++ evalCPP_fast.cpp -O3 -march=native -mtune=native -flto -fuse-ld=lld -DNDEBUG -o evalCPP_fast.exe
 // https://github.com/llvm/llvm-project/releases
-// Mesure : environ 750ms constatées, comme avec ZIG
 // ***********************************************************************************************
 
 #include <windows.h>

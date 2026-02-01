@@ -6,7 +6,6 @@
       * Le compilateur GnuCOBOL est libre et gratuit.
       * Téléchargement via https://superbol.eu/resources/windows-aio-32/
       * Compilation : cobc -x evalCOBOL.cob
-      * Mesure 'à la main' : environ 17" constatées
       * 
        IDENTIFICATION DIVISION.
        PROGRAM-ID. EVALCOBOL.

@@ -2,7 +2,6 @@
 // Version en Javascript - OPTIMISÉE
 // Exécution : node evalJS.js ou bun evalJS.js
 // Création d'un exécutable à partir de bun : bun build evalJS.js --compile puis ./evalJS.exe
-// Mesure : environ 2,5" constatées
 // ***********************************************************************************************
 
 import { open } from "fs/promises"; // Pour lecture d'un fichier texte ligne à ligne

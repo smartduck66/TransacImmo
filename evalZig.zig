@@ -2,7 +2,6 @@
 // Version en Zig - OPTIMISÉE
 // Compilation avec Zig : zig build-exe evalZig.zig -O ReleaseFast -fstrip
 // https://ziglang.org/download/
-// Mesure : 758ms ! 3 fois plus rapide que la version basique écrite en C++ ou en JS.
 
 const std = @import("std");
 
