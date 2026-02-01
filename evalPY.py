@@ -2,7 +2,9 @@
 # Version en Python
 # Exécution : python evalPY.py
 # Mesure : environ 6" constatées
-# ***********************************************************************************************
+# Piste d'optimisation : compiler le code source avec nuitka pour obtenir un exécutable natif plus rapide.
+#                        py -m nuitka --onefile --standalone evalpy.py
+# ********************************************************************************************************
 
 import time
 
