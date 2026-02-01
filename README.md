@@ -75,15 +75,17 @@ Chaque fichier source contient un en-tête précisant la ligne de commande de co
 
 Voici les versions téléchargées au 1er février 2026 :
 
-| Langage     | Runtime / Compilateur | Version |
-|-------------|------------------------|---------|
-| JavaScript  | Node.js                | v24.11.1 |
-| JavaScript  | Bun (exécutable autonome) | v1.3.6 |
-| C++         | LLVM / Clang           | v21.1.8 |
-| Cobol       | GnuCOBOL               | v3.3 |
-| Zig         | Zig                    | v0.15.2 |
-| Python      | Python                 | v3.14.2 |
-| C#          | .NET                   | v10 (C# 14) |
+| Rang | Langage     | Runtime / Compilateur | Version |
+|-----:|-------------|------------------------|---------|
+| 1 | C++         | LLVM / Clang           | v21.1.8 |
+| 2 | Zig         | Zig                    | v0.15.2 |
+| 3 | C#          | .NET                   | v10 (C# 14) |
+| 4 | JavaScript  | Node.js                | v24.11.1 |
+| 5 | C++         | LLVM / Clang (*classic*) | v21.1.8 |
+| 6 | JavaScript  | Bun (exécutable autonome) | v1.3.6 |
+| 7 | Python      | Python                 | v3.14.2 |
+| 8 | Cobol       | GnuCOBOL               | v3.3 |
+
 
 
 
