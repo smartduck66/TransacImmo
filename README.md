@@ -81,9 +81,9 @@ Voici les versions téléchargées au 1er février 2026 :
 
 1/ Vous devez créer un répertoire /data et y stocker le fichier valeursfoncieres.txt récupérable à l'adresse suivante : https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/. L'année importe peu : les tests ont été réalisés avec les transactions immobilières de l'année 2023.
 
-2/ Vous devez compiler chaque source avec le compilateur fourni. Ex : après avoir téléchargé Clang, vous lancez la commande 'clang -O3 evalCPP.cpp -o evalCPP.exe' pour le code source C++.
+2/ Vous devez compiler chaque source avec le compilateur fourni. Ex : après avoir téléchargé Clang, vous lancez la commande 'clang -O3 evalCPP.cpp -o evalCPP.exe' pour le code source C++ 'classic'.
 
-3/ Vous pouvez alors lancer chaque exécutable
+3/ Vous pouvez alors lancer chaque exécutable (ex : evalCPP.exe)
 
 
 ## Evaluations du temps d'exécution moyen sous PC Windows 11, 2,8 Ghz, Intel Core i9-10900F (10 cœurs), 64 Go de RAM 

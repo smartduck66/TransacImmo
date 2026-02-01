@@ -1,6 +1,7 @@
 // Lecture du fichier des transactions immobilières
-// Version en C++ - OPTIMISÉE
+// Version en C++ 'classic'
 // Compilation avec LLVM : clang -O3 evalCPP.cpp -o evalCPP.exe
+// Exécution : evalCPP.exe
 // https://github.com/llvm/llvm-project/releases
 // ***********************************************************************************************
 

@@ -1,6 +1,7 @@
 // Lecture du fichier des transactions immobilières
 // Version en Zig - OPTIMISÉE
 // Compilation avec Zig : zig build-exe evalZig.zig -O ReleaseFast -fstrip
+// Exécution : evalZig.exe
 // https://ziglang.org/download/
 
 const std = @import("std");

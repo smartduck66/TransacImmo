@@ -1,8 +1,8 @@
 // Lecture du fichier des transactions immobilières
 // Version en Javascript - OPTIMISÉE
 // Exécution : node evalJS.js ou bun evalJS.js
-// Création d'un exécutable à partir de bun : bun build evalJS.js --compile puis ./evalJS.exe
-// ***********************************************************************************************
+// Création optionnelle d'un exécutable à partir de bun : bun build evalJS.js --compile puis exécution via ./evalJS.exe
+// ********************************************************************************************************************
 
 import { open } from "fs/promises"; // Pour lecture d'un fichier texte ligne à ligne
 

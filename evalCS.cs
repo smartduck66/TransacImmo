@@ -1,7 +1,7 @@
 // Lecture du fichier des transactions immobilières
 // Version en C#
-// Exécution : evalCS.exe
 // Création d'un exécutable : dotnet publish EvalCS.cs -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:PublishTrimmed=true -o .
+// Exécution : evalCS.exe
 // *****************************************************************************************************************************************************
 
 using System;
