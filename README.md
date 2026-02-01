@@ -86,13 +86,15 @@ Voici les versions téléchargées au 1er février 2026 :
 3/ Vous pouvez alors lancer chaque exécutable (ex : evalCPP.exe)
 
 
-## Evaluations du temps d'exécution moyen sous PC Windows 11, 2,8 Ghz, Intel Core i9-10900F (10 cœurs), 64 Go de RAM 
+## Évaluations du temps d'exécution moyen sur un PC Windows 11 — 2,8 GHz, Intel Core i9-10900F (10 cœurs), 64 Go de RAM
 
-- C++, version 'fast':       750 ms
-- Zig :                      785 ms
-- C# :                       800 ms
-- Javascript, via node :   2 400 ms 
-- Javascript, via bun :    2 600 ms 
-- C++, version 'classic' : 2 500 ms 
-- Python :                 6 000 ms
-- Cobol :                 17 000 ms
+| Langage / Implémentation        | Temps moyen |
+|---------------------------------|-------------|
+| C++ (version *fast*)            | 750 ms      |
+| Zig                             | 785 ms      |
+| C#                              | 800 ms      |
+| JavaScript (Node.js)            | 2 400 ms    |
+| JavaScript (Bun)                | 2 600 ms    |
+| C++ (version *classic*)         | 2 500 ms    |
+| Python                          | 6 000 ms    |
+| Cobol                           | 17 000 ms   |
