@@ -93,7 +93,7 @@
                IF WS-PRIX-INT NOT = 0 AND 
                   WS-PRIX-INT NOT = WS-TR-CUR-INT
                    ADD WS-PRIX-INT TO WS-TOTAL-VENTES
-                   MOVE FUNCTION NUMVAL(WS-FIELD (11)) TO WS-TR-CUR-INT
+                   MOVE WS-PRIX-INT TO WS-TR-CUR-INT
                    ADD 1 TO WS-NB-TRANSACTIONS
                END-IF
         
