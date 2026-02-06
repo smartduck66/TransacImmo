@@ -80,7 +80,7 @@ Voici les versions téléchargées au 1er février 2026 :
 | C++         | LLVM / Clang           | v21.1.8 |
 | Zig         | Zig                    | v0.15.2 |
 | C#          | .NET                   | v10 (C# 14) |
-| JavaScript  | Node.js                | v24.11.1 |
+| JavaScript  | Node.js                | v24.13.0 |
 | JavaScript  | Bun (exécutable autonome) | v1.3.6 |
 | Python      | Python                 | v3.14.2 |
 | Cobol       | GnuCOBOL               | v3.3 |
